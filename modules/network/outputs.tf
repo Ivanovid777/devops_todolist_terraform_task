@@ -10,7 +10,7 @@ output "azurerm_subnet_address_space" {
   value = azurerm_subnet.portfolio.address_prefixes
 }
 
-output "azurerm_public_ip" {
+output "public_ip_address" {
   value = azurerm_public_ip.portfolio.ip_address
 }
 

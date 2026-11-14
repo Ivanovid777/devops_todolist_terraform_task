@@ -58,7 +58,7 @@ resource "azurerm_virtual_machine_extension" "portfolio" {
   "fileUris": [
     "${var.install_script_url}"
   ]
-  ,"commandToExecute": "sudo ./install-app.sh"
+,"commandToExecute": "sudo bash install-app.sh"
  }
 SETTINGS
 
