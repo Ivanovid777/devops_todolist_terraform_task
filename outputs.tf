@@ -1,6 +1,6 @@
 output "public_ip_address" {
   description = "Public IP address of the virtual machine."
-  value       = module.network.azurerm_public_ip
+  value       = module.network.public_ip_address
 }
 
 output "public_ip_fqdn" {

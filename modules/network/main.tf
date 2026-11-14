@@ -54,7 +54,7 @@ resource "azurerm_public_ip" "portfolio" {
   resource_group_name = var.resource_group_name
   # README asks for "Dynamic", but Basic SKU public IPs are retired;
   # Standard SKU requires static allocation.
-  allocation_method = "Static"
+  allocation_method = "Dynamic"
   sku               = "Standard"
   domain_name_label = "${var.dns_label}${random_integer.dns_label.result}"
 }
